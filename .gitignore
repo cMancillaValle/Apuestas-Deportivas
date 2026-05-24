@@ -1,0 +1,71 @@
+# ─────────────────────────────────────────────
+# Variables de entorno (nunca subir al repo)
+# ─────────────────────────────────────────────
+.env
+.env.local
+.env.development
+.env.production
+.env.example
+
+# ─────────────────────────────────────────────
+# Dependencias Node.js
+# ─────────────────────────────────────────────
+node_modules/
+frontend/node_modules/
+
+# ─────────────────────────────────────────────
+# Build / dist (artefactos generados)
+# ─────────────────────────────────────────────
+dist/
+frontend/dist/
+build/
+frontend/build/
+.vite/
+frontend/.vite/
+
+# ─────────────────────────────────────────────
+# Java / Maven - billetera-service
+# ─────────────────────────────────────────────
+billetera-service/target/
+billetera-service/.mvn/wrapper/maven-wrapper.jar
+*.class
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# ─────────────────────────────────────────────
+# Logs
+# ─────────────────────────────────────────────
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ─────────────────────────────────────────────
+# Editores e IDEs
+# ─────────────────────────────────────────────
+.vscode/
+.idea/
+*.iml
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ─────────────────────────────────────────────
+# Sistema Operativo
+# ─────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─────────────────────────────────────────────
+# Docker (datos locales, no configuración)
+# ─────────────────────────────────────────────
+docker-data/

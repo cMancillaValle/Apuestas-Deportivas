@@ -1,0 +1,26 @@
+{
+  "name": "apuestas-deportivas",
+  "version": "1.0.0",
+  "description": "Sistema de Apuestas Deportivas - Módulo de Procesamiento de Apuestas",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "db:schema": "node db/run-schema.js",
+    "db:seed": "node db/run-seed.js"
+  },
+  "dependencies": {
+    "@fastify/cors": "^9.0.1",
+    "@fastify/swagger": "^8.14.0",
+    "@fastify/swagger-ui": "^3.0.0",
+    "dotenv": "^16.4.5",
+    "fastify": "^4.26.0",
+    "jsonwebtoken": "^9.0.2",
+    "kafkajs": "^2.2.4",
+    "pg": "^8.11.3",
+    "pino-pretty": "^13.1.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
