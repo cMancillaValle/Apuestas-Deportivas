@@ -1,6 +1,8 @@
 // src/services/api.js
 // Servicio de llamadas al backend
 
+
+//const NODE_API = 'https://apuestas-deportivas-production.up.railway.app/api'
 const NODE_API = import.meta.env.VITE_API_URL ? `${import.meta.env.VITE_API_URL}/api` : 'http://localhost:3000/api';
 // Billetera está en 8080 (usado solo para consultar saldo directo si hiciera falta, 
 // aunque lo ideal es que todo pase por el BFF o el microservicio según la arquitectura).

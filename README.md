@@ -5,7 +5,7 @@ Docente: Elias Buitrago Bolivar
 
 ---
 
-## Funcionalidad Implementada (Semana 2)
+## Funcionalidad Implementada
 
 **Módulo:** Procesamiento de Apuesta Simple  
 **Regla de negocio principal:** No se permite registrar una apuesta si el monto apostado es superior al saldo disponible en la billetera del usuario.

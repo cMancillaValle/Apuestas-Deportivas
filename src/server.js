@@ -28,7 +28,7 @@ async function buildServer() {
   // ── CORS ───────────────────────────────────────────────────
   // Permitir solicitudes del frontend React local (Vite)
   await fastify.register(cors, {
-    origin: 'http://localhost:5173',
+    origin: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS']
   });
 

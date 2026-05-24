@@ -84,13 +84,13 @@ const ProcesarApuestaService = {
     }
 
     // ── 6. Emitir Evento Asíncrono (Kafka) ─────────────────
-    // En segundo plano, publicamos que la apuesta fue exitosa
-    await KafkaProducer.publicarApuestaRealizada({
-      apuesta_id: apuesta.id,
-      usuario_id: usuario_id,
-      monto,
-      estado: apuesta.estado
-    });
+    // En segundo plano, publicamos que la apuesta fue exitosa (comentado para simplificar despliegue)
+    //await KafkaProducer.publicarApuestaRealizada({
+    //  apuesta_id: apuesta.id,
+    //  usuario_id: usuario_id,
+    //  monto,
+    //  estado: apuesta.estado
+    //});
 
     // ── Respuesta de dominio ───────────────────────────────
     return {
