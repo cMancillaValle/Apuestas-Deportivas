@@ -28,10 +28,7 @@ async function buildServer() {
   // ── CORS ───────────────────────────────────────────────────
   // Permitir solicitudes del frontend React local (Vite)
   await fastify.register(cors, {
-    origin: [
-      'http://localhost:5173',
-      'https://d19a4a03.apuestas-deportivas.pages.dev'
-    ],
+    origin: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS']
   });
 
