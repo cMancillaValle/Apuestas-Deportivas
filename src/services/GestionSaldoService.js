@@ -5,6 +5,7 @@
 const BusinessError = require('../entities/BusinessError');
 
 const BILLETERA_BASE_URL = process.env.BILLETERA_SERVICE_URL || 'http://localhost:8080';
+console.log('BILLETERA_BASE_URL:', BILLETERA_BASE_URL);
 const TIMEOUT_MS = 5000;
 
 /**
