@@ -42,7 +42,7 @@ function App() {
 
   const loadUserData = async (currentUser, currentToken) => {
     try {
-      const res = await fetch(`http://localhost:8080/api/billeteras/usuario/${currentUser.id}`);
+      const res = await fetch( `https://billetera-service-production.up.railway.app/api/billeteras/usuario/${currentUser.id}`);
       if(res.ok) {
         const billetera = await res.json();
         setBalance(billetera.saldoReal);
