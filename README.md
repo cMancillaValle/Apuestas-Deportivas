@@ -111,28 +111,7 @@ Documentación Swagger: `http://localhost:3000/docs`
 
 **Error — Cuota inválida (409 Conflict):**
 ```json
-{ "detail": "La cuota seleccionada ya no se encuentra vigente.", "code": "CUOTA_NO_VIGENTE" }
-```
-
----
-
-## Datos de prueba (seed)
-
-| usuario_id | Nombre          | Saldo inicial | Caso de prueba         |
-|------------|-----------------|---------------|------------------------|
-| 1          | Carlos Mancilla | $200.000      | Apuesta válida         |
-| 2          | Esteban Vallejo | $30.000       | Saldo limitado         |
-| 3          | Xavier Bravo    | $0            | Saldo insuficiente     |
-
-| cuota_id | Partido              | Descripción        | Vigente | Estado partido |
-|----------|----------------------|--------------------|---------|----------------|
-| 1        | Real Madrid vs Barça | Victoria R. Madrid | ✅      | ACTIVO         |
-| 2        | Real Madrid vs Barça | Empate             | ✅      | ACTIVO         |
-| 3        | Real Madrid vs Barça | Victoria Barça     | ❌      | ACTIVO         |
-| 4        | Lakers vs Warriors   | Victoria Lakers    | ✅      | ACTIVO         |
-| 6        | Nadal vs Djokovic    | Victoria Nadal     | ❌      | FINALIZADO     |
-
----
+{ "detail": "La cuota seleccionada ya no se encuentra vigente.", "code": "CUOTA_NO_VIG
 
 ## Casos de prueba para evidencias
 
